@@ -25,9 +25,7 @@ namespace Vidly.Controllers
 
         public ActionResult Index()
         {
-            var cstmr = _context.Customers.Include(c => c.MembershipType).ToList();
-
-            return View(cstmr);
+            return View();
         }
 
         public ActionResult Details(int id)
